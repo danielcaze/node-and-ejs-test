@@ -1,0 +1,22 @@
+<header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">EJS</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a href="/" class="nav-link">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item" >
+                <a href="/sobre" class="nav-link">
+                    Sobre mim
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <p>
+        Página: <%= typeof pagina != 'undefined' ? pagina: 'home' %> <!--Chamando o objeto criado nas paginas para definir a pagina atual-->
+        <!--O = serve para dizer que o arquivo veio dinamicamente para ca-->
+    </p>
+</header>
